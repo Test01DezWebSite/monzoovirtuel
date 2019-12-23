@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.11.1.js"></script>
+    <script src="js/main.js"></script>
+    <title>Zoo virtuel</title>
+  </head>
+  <body>
+  	<div class="jumbotron">
+  		<div class="container">
+  			<div class="row">
+  				<div class="col-md-2">
+  					<img src="img/panda.png">
+  				</div>
+  				<div class="col-md-10">
+						<h1>Zoo virtuel</h1>
+  					<div class="initial-instructions">
+  						<p>Cette application vous permet de créer votre propre zoo virtuel. Remplissez le formulaire à droite pour créer un animal de compagnie. Vos animaux de compagnie comptent sur vous, assurez-vous de les nourrir, de jouer avec eux et de leur donner le temps de dormir, comme vous le feriez pour votre animal de compagnie favori :).</p>
+	  				</div>
+	  			</div>
+	  	</div>
+	  	</div>
+	  
+	  </div>
+  
+	  <div class="container">
+	  	
+	  	<div class="row">
+	  	<div class="col-md-8">
+	  
+	  	
+	  	<div class="pet-stats">
+	  		<h3>Voici comment <span id="name"></span> se porte:</h3>
+	  		<p>Niveau de nourriture: <span id="food"></span></p>
+	  		<p>Niveau de repos: <span id="sleep"></span></p>
+	  		<p>Niveau d'activité: <span id="activity"></activity></p>
+	  		<div class="btn-group">
+  				<button type="button" class="btn btn-default" id="feed">Nourrit</button>
+  				<button type="button" class="btn btn-default" id="put-to-bed">Met au lit</button>
+  				<button type="button" class="btn btn-default" id="play">Joue</button>
+				</div>
+	  		
+	  	</div> 
+	  	
+	  	<div class="after-death">
+	  		<h3 id="status-message"></h3>
+	  	</div>
+	  	</div>
+	  	
+	  	<div class="col-md-4">
+	  		<div id="zoo">
+	  			<h3>Mon zoo</h3>
+	  			<p>Clic sur le nom de l'animal pour consulter.</p>
+	  			<div class="btn-group-vertical" id="zoo-list">
+	  			</div>
+	  		</div>
+	  		<h4>Créer un animal</h4>
+	  		<form id="new-pet">
+	  			<div class="form-group">
+          	<label for="new-pet-name">Quel est le nom de ton animal?</label>
+          	<input type="text" class="form-control" id="new-pet-name">
+        	</div>
+        
+      	  <div class="form-group">
+        	  <label for="new-pet-type">Quel genre d'animal est-ce?</label>
+        	 	 <input type="text" class="form-control" id="new-pet-type">
+        	</div>
+          
+        	<button type="submit" class="btn">Créer un animal</button>
+	  		</form>
+	  		</div>
+	  	</div> 
+  	</div>
+  </body>
+</html>
